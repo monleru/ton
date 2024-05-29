@@ -1,14 +1,8 @@
 'use client'
 import Image from "next/image";
 import { useState } from "react";
-import { useSearchParams } from 'next/navigation'
 
 export const  Main  =  () => {
-  const searchParams = useSearchParams()
- 
-  const search = searchParams.get('name')
-
-  console.log(search)
   const [clicks,setClicks] = useState<number>(0)
   const click = (event:any) => {
     setClicks(num => num + 1)
