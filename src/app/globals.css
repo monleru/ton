@@ -38,14 +38,15 @@ body {
       opacity: 1;
   }
   100% {
-      transform: translateY(-100px);
+      transform: translateY(-150px);
       opacity: 0;
   }
 }
 
 .number{
   position: absolute;
-  animation: fly 3s forwards;
+  animation: fly 2s forwards;
   font-size: 24px;
   color: white;
+  pointer-events: none;
 }

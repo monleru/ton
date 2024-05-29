@@ -8,7 +8,7 @@ export default function Home() {
     const parentElement = document.getElementById('lol');
     const newElement = document.createElement('div');
     newElement.className = 'number';
-    newElement.innerText = 'Uga buga';
+    newElement.innerText = '1';
     const rect = parentElement!.getBoundingClientRect();
 
     newElement.style.position = `absolute`;
