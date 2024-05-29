@@ -18,12 +18,11 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: url('../../public/background.png');
+  background-size: cover;
+  background-position: center; /* Центрирует изображение */
+  background-repeat: no-repeat; /* Предотвращает повторение изображения */
+
 }
 
 @layer utilities {
@@ -49,4 +48,8 @@ body {
   font-size: 24px;
   color: white;
   pointer-events: none;
+}
+
+*{
+  box-sizing: border-box;
 }
