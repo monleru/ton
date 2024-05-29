@@ -4,7 +4,7 @@ import { useState } from "react";
 
 export default function Home() {
   const [clicks,setClicks] = useState<any[]>([])
-  const click = (event) => {
+  const click = (event:any) => {
     const parentElement = document.getElementById('lol');
     const newElement = document.createElement('div');
     newElement.className = 'number';
